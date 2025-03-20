@@ -1,3 +1,8 @@
+import time 
+ 
+# store starting time 
+begin = time.time() 
+
 def verify_card_number(card_number):
     sum_of_odd_digits = 0
     card_number_reversed = card_number[::-1]
@@ -27,3 +32,7 @@ def main():
         print('INVALID!')
 
 main()
+
+# store end time
+end = time.time()
+print(f"Runtime of the program is {end - begin}")

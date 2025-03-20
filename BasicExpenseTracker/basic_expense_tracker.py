@@ -1,3 +1,8 @@
+import time 
+ 
+# store starting time 
+begin = time.time() 
+
 def add_expense(expenses, amount, category):
     expenses.append({'amount': amount, 'category': category})
     
@@ -47,3 +52,7 @@ def main():
             break
 
 main()
+
+# store end time
+end = time.time()
+print(f"Runtime of the program is {end - begin}")

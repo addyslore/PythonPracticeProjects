@@ -1,3 +1,8 @@
+import time 
+ 
+# store starting time 
+begin = time.time() 
+
 def caesar(message, offset):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     encrypted_text = ''
@@ -12,3 +17,7 @@ def caesar(message, offset):
     print('encrypted text:', encrypted_text)
 
 caesar('hello world', 3)
+
+# store end time
+end = time.time()
+print(f"Runtime of the program is {end - begin}")

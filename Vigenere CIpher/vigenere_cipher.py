@@ -1,3 +1,8 @@
+import time 
+ 
+# store starting time 
+begin = time.time() 
+
 text = input('Enter the text to encrypt: ')
 custom_key = 'python'
 
@@ -25,3 +30,7 @@ def vigenere(message, key):
 
 encryption = vigenere(text, custom_key)
 print(encryption)
+
+# store end time
+end = time.time()
+print(f"Runtime of the program is {end - begin}")
