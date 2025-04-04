@@ -5,7 +5,7 @@ def arithmetic_formatter(txt):
         new_txt.append(a)
 
     first_line = ''
-    second_line = ''
+    second_line= ''
     mid_line = ''
     third_line = ''
 
